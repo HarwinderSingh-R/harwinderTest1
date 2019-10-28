@@ -1,0 +1,26 @@
+PODS:
+  - Alamofire (4.9.0)
+  - IQKeyboardManagerSwift (6.5.2)
+  - ReachabilitySwift (5.0.0)
+  - SDWebImage (4.4.7):
+    - SDWebImage/Core (= 4.4.7)
+  - SDWebImage/Core (4.4.7)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - IQKeyboardManagerSwift
+  - ReachabilitySwift
+  - SDWebImage (~> 4.0)
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  IQKeyboardManagerSwift: c75366f1f19590e8caeae45fcd5815c9289d6099
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  SDWebImage: c10d14a8883ebd89664f02a422006f66a85c0c5d
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: bd3dc257feff313eadffdec6685d1b68fdcb77cf
+
+COCOAPODS: 1.4.0

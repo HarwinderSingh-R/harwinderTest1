@@ -1,0 +1,941 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04DEDBF4236220B200F2C67F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DEDBF3236220B200F2C67F /* AppDelegate.swift */; };
+		04DEDBF6236220B200F2C67F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DEDBF5236220B200F2C67F /* SceneDelegate.swift */; };
+		04DEDBF8236220B200F2C67F /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DEDBF7236220B200F2C67F /* ProductListViewController.swift */; };
+		04DEDBFB236220B200F2C67F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04DEDBF9236220B200F2C67F /* Main.storyboard */; };
+		04DEDBFE236220B200F2C67F /* HarwinderWalMart1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04DEDBFC236220B200F2C67F /* HarwinderWalMart1.xcdatamodeld */; };
+		04DEDC00236220B200F2C67F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DEDBFF236220B200F2C67F /* Assets.xcassets */; };
+		04DEDC03236220B200F2C67F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04DEDC01236220B200F2C67F /* LaunchScreen.storyboard */; };
+		04DEDC27236221D500F2C67F /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DEDC26236221D500F2C67F /* ProductDetailViewController.swift */; };
+		04DEDC3323623BA200F2C67F /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DEDC3123623BA200F2C67F /* Products.swift */; };
+		04DEDC3423623BA200F2C67F /* ProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DEDC3223623BA200F2C67F /* ProductList.swift */; };
+		04DEDC3823623C1500F2C67F /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DEDC3723623C1500F2C67F /* ProductTableViewCell.swift */; };
+		04DEDC3B236248FD00F2C67F /* ApiStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DEDC3A236248FD00F2C67F /* ApiStore.swift */; };
+		04DEDC3E23624D8B00F2C67F /* ProductListFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DEDC3D23624D8B00F2C67F /* ProductListFacade.swift */; };
+		04DEDC4023624F4700F2C67F /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DEDC3F23624F4700F2C67F /* ApiConstants.swift */; };
+		04DEDC442362933700F2C67F /* HRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DEDC432362933700F2C67F /* HRatingView.swift */; };
+		04DEDC4723629EF800F2C67F /* HWalmartImageView+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DEDC4623629EF800F2C67F /* HWalmartImageView+UIImageView.swift */; };
+		04DEDC492362A38100F2C67F /* HWalmartAppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DEDC482362A38100F2C67F /* HWalmartAppConstants.swift */; };
+		04DEDC4B2362B13200F2C67F /* AbstractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DEDC4A2362B13200F2C67F /* AbstractViewController.swift */; };
+		04DEDC4D2362D41300F2C67F /* HWalmartString+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DEDC4C2362D41300F2C67F /* HWalmartString+String.swift */; };
+		04DEDC4F23637F6200F2C67F /* HWalmartConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DEDC4E23637F6200F2C67F /* HWalmartConnectivity.swift */; };
+		04DEDC5123638AEC00F2C67F /* HBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DEDC5023638AEB00F2C67F /* HBannerView.swift */; };
+		718D594EB4D3167C9C358685 /* Pods_HarwinderWalMart1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C0CF7CDBE54EA5FE82CA42A /* Pods_HarwinderWalMart1.framework */; };
+		738869E5940871CDF9846988 /* Pods_HarwinderWalMart1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C2F34DD006E0EDA748F880 /* Pods_HarwinderWalMart1Tests.framework */; };
+		9CF85C9D97F4970AD7D446AA /* Pods_HarwinderWalMart1UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F987FBA013193AF4280F76 /* Pods_HarwinderWalMart1UITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04DEDC0A236220B300F2C67F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04DEDBE8236220B200F2C67F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04DEDBEF236220B200F2C67F;
+			remoteInfo = HarwinderWalMart1;
+		};
+		04DEDC15236220B300F2C67F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04DEDBE8236220B200F2C67F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04DEDBEF236220B200F2C67F;
+			remoteInfo = HarwinderWalMart1;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04DEDBF0236220B200F2C67F /* WalProd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalProd.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04DEDBF3236220B200F2C67F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04DEDBF5236220B200F2C67F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		04DEDBF7236220B200F2C67F /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		04DEDBFA236220B200F2C67F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04DEDBFD236220B200F2C67F /* HarwinderWalMart1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HarwinderWalMart1.xcdatamodel; sourceTree = "<group>"; };
+		04DEDBFF236220B200F2C67F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04DEDC02236220B200F2C67F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04DEDC04236220B200F2C67F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04DEDC09236220B300F2C67F /* HarwinderWalMart1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HarwinderWalMart1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04DEDC14236220B300F2C67F /* HarwinderWalMart1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HarwinderWalMart1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04DEDC26236221D500F2C67F /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		04DEDC3123623BA200F2C67F /* Products.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		04DEDC3223623BA200F2C67F /* ProductList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductList.swift; sourceTree = "<group>"; };
+		04DEDC3723623C1500F2C67F /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		04DEDC3A236248FD00F2C67F /* ApiStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiStore.swift; sourceTree = "<group>"; };
+		04DEDC3D23624D8B00F2C67F /* ProductListFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListFacade.swift; sourceTree = "<group>"; };
+		04DEDC3F23624F4700F2C67F /* ApiConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConstants.swift; sourceTree = "<group>"; };
+		04DEDC432362933700F2C67F /* HRatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HRatingView.swift; sourceTree = "<group>"; };
+		04DEDC4623629EF800F2C67F /* HWalmartImageView+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HWalmartImageView+UIImageView.swift"; sourceTree = "<group>"; };
+		04DEDC482362A38100F2C67F /* HWalmartAppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWalmartAppConstants.swift; sourceTree = "<group>"; };
+		04DEDC4A2362B13200F2C67F /* AbstractViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractViewController.swift; sourceTree = "<group>"; };
+		04DEDC4C2362D41300F2C67F /* HWalmartString+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HWalmartString+String.swift"; sourceTree = "<group>"; };
+		04DEDC4E23637F6200F2C67F /* HWalmartConnectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWalmartConnectivity.swift; sourceTree = "<group>"; };
+		04DEDC5023638AEB00F2C67F /* HBannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HBannerView.swift; sourceTree = "<group>"; };
+		3BEC1A52D9A3D0327722CA11 /* Pods-HarwinderWalMart1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HarwinderWalMart1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HarwinderWalMart1/Pods-HarwinderWalMart1.debug.xcconfig"; sourceTree = "<group>"; };
+		3D146C9B4A6EE8CCC0C4DCCA /* Pods-HarwinderWalMart1UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HarwinderWalMart1UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HarwinderWalMart1UITests/Pods-HarwinderWalMart1UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		54C2F34DD006E0EDA748F880 /* Pods_HarwinderWalMart1Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HarwinderWalMart1Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C0CF7CDBE54EA5FE82CA42A /* Pods_HarwinderWalMart1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HarwinderWalMart1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FD8BB1FBFDDBA8B1FAEDCC3 /* Pods-HarwinderWalMart1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HarwinderWalMart1Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HarwinderWalMart1Tests/Pods-HarwinderWalMart1Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		877862E799B5907397B73A59 /* Pods-HarwinderWalMart1UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HarwinderWalMart1UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HarwinderWalMart1UITests/Pods-HarwinderWalMart1UITests.release.xcconfig"; sourceTree = "<group>"; };
+		C072F188914A186FD7F5D8CF /* Pods-HarwinderWalMart1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HarwinderWalMart1Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HarwinderWalMart1Tests/Pods-HarwinderWalMart1Tests.release.xcconfig"; sourceTree = "<group>"; };
+		CD1E14F92DE580C97ABDB51F /* Pods-HarwinderWalMart1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HarwinderWalMart1.release.xcconfig"; path = "Pods/Target Support Files/Pods-HarwinderWalMart1/Pods-HarwinderWalMart1.release.xcconfig"; sourceTree = "<group>"; };
+		E6F987FBA013193AF4280F76 /* Pods_HarwinderWalMart1UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HarwinderWalMart1UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04DEDBED236220B200F2C67F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				718D594EB4D3167C9C358685 /* Pods_HarwinderWalMart1.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04DEDC06236220B300F2C67F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				738869E5940871CDF9846988 /* Pods_HarwinderWalMart1Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04DEDC11236220B300F2C67F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CF85C9D97F4970AD7D446AA /* Pods_HarwinderWalMart1UITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04DEDBE7236220B200F2C67F = {
+			isa = PBXGroup;
+			children = (
+				04DEDBF2236220B200F2C67F /* HarwinderWalMart1 */,
+				04DEDBF1236220B200F2C67F /* Products */,
+				592E71E21A43588C31D0B2C4 /* Pods */,
+				9458FA8535DB6A6B64D2080D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		04DEDBF1236220B200F2C67F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04DEDBF0236220B200F2C67F /* WalProd.app */,
+				04DEDC09236220B300F2C67F /* HarwinderWalMart1Tests.xctest */,
+				04DEDC14236220B300F2C67F /* HarwinderWalMart1UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04DEDBF2236220B200F2C67F /* HarwinderWalMart1 */ = {
+			isa = PBXGroup;
+			children = (
+				04DEDC422362925D00F2C67F /* Providers */,
+				04DEDC4123627B0900F2C67F /* Controllers */,
+				04DEDC3C23624D7A00F2C67F /* Facade */,
+				04DEDC39236248CF00F2C67F /* Services */,
+				04DEDC3623623C0100F2C67F /* Views */,
+				04DEDC2C23623B5400F2C67F /* Modal */,
+				04DEDBF3236220B200F2C67F /* AppDelegate.swift */,
+				04DEDBF5236220B200F2C67F /* SceneDelegate.swift */,
+				04DEDBF9236220B200F2C67F /* Main.storyboard */,
+				04DEDBFF236220B200F2C67F /* Assets.xcassets */,
+				04DEDC01236220B200F2C67F /* LaunchScreen.storyboard */,
+				04DEDC04236220B200F2C67F /* Info.plist */,
+				04DEDBFC236220B200F2C67F /* HarwinderWalMart1.xcdatamodeld */,
+			);
+			path = HarwinderWalMart1;
+			sourceTree = "<group>";
+		};
+		04DEDC2C23623B5400F2C67F /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				04DEDC3223623BA200F2C67F /* ProductList.swift */,
+				04DEDC3123623BA200F2C67F /* Products.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		04DEDC3623623C0100F2C67F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04DEDC3723623C1500F2C67F /* ProductTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		04DEDC39236248CF00F2C67F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				04DEDC3A236248FD00F2C67F /* ApiStore.swift */,
+				04DEDC3F23624F4700F2C67F /* ApiConstants.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		04DEDC3C23624D7A00F2C67F /* Facade */ = {
+			isa = PBXGroup;
+			children = (
+				04DEDC3D23624D8B00F2C67F /* ProductListFacade.swift */,
+			);
+			path = Facade;
+			sourceTree = "<group>";
+		};
+		04DEDC4123627B0900F2C67F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				04DEDC26236221D500F2C67F /* ProductDetailViewController.swift */,
+				04DEDBF7236220B200F2C67F /* ProductListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		04DEDC422362925D00F2C67F /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				04DEDC5023638AEB00F2C67F /* HBannerView.swift */,
+				04DEDC4523629EC600F2C67F /* Extentions */,
+				04DEDC432362933700F2C67F /* HRatingView.swift */,
+				04DEDC482362A38100F2C67F /* HWalmartAppConstants.swift */,
+				04DEDC4A2362B13200F2C67F /* AbstractViewController.swift */,
+				04DEDC4E23637F6200F2C67F /* HWalmartConnectivity.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		04DEDC4523629EC600F2C67F /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				04DEDC4623629EF800F2C67F /* HWalmartImageView+UIImageView.swift */,
+				04DEDC4C2362D41300F2C67F /* HWalmartString+String.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		592E71E21A43588C31D0B2C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3BEC1A52D9A3D0327722CA11 /* Pods-HarwinderWalMart1.debug.xcconfig */,
+				CD1E14F92DE580C97ABDB51F /* Pods-HarwinderWalMart1.release.xcconfig */,
+				7FD8BB1FBFDDBA8B1FAEDCC3 /* Pods-HarwinderWalMart1Tests.debug.xcconfig */,
+				C072F188914A186FD7F5D8CF /* Pods-HarwinderWalMart1Tests.release.xcconfig */,
+				3D146C9B4A6EE8CCC0C4DCCA /* Pods-HarwinderWalMart1UITests.debug.xcconfig */,
+				877862E799B5907397B73A59 /* Pods-HarwinderWalMart1UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9458FA8535DB6A6B64D2080D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C0CF7CDBE54EA5FE82CA42A /* Pods_HarwinderWalMart1.framework */,
+				54C2F34DD006E0EDA748F880 /* Pods_HarwinderWalMart1Tests.framework */,
+				E6F987FBA013193AF4280F76 /* Pods_HarwinderWalMart1UITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04DEDBEF236220B200F2C67F /* HarwinderWalMart1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04DEDC1D236220B300F2C67F /* Build configuration list for PBXNativeTarget "HarwinderWalMart1" */;
+			buildPhases = (
+				B3BC4BA3A9201F5AEBDDC491 /* [CP] Check Pods Manifest.lock */,
+				04DEDBEC236220B200F2C67F /* Sources */,
+				04DEDBED236220B200F2C67F /* Frameworks */,
+				04DEDBEE236220B200F2C67F /* Resources */,
+				2BDFEDD8ACA6A05398BFC391 /* [CP] Embed Pods Frameworks */,
+				F434D6951C84857C44374E1C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HarwinderWalMart1;
+			productName = HarwinderWalMart1;
+			productReference = 04DEDBF0236220B200F2C67F /* WalProd.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04DEDC08236220B300F2C67F /* HarwinderWalMart1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04DEDC20236220B300F2C67F /* Build configuration list for PBXNativeTarget "HarwinderWalMart1Tests" */;
+			buildPhases = (
+				43928D590DA9482E0C745F88 /* [CP] Check Pods Manifest.lock */,
+				04DEDC05236220B300F2C67F /* Sources */,
+				04DEDC06236220B300F2C67F /* Frameworks */,
+				04DEDC07236220B300F2C67F /* Resources */,
+				6330F5E90A680F0E552B7CC8 /* [CP] Embed Pods Frameworks */,
+				15AD942783265CF7C6C774AC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04DEDC0B236220B300F2C67F /* PBXTargetDependency */,
+			);
+			name = HarwinderWalMart1Tests;
+			productName = HarwinderWalMart1Tests;
+			productReference = 04DEDC09236220B300F2C67F /* HarwinderWalMart1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04DEDC13236220B300F2C67F /* HarwinderWalMart1UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04DEDC23236220B300F2C67F /* Build configuration list for PBXNativeTarget "HarwinderWalMart1UITests" */;
+			buildPhases = (
+				5EFAE07C3BE8486DE64C1FBE /* [CP] Check Pods Manifest.lock */,
+				04DEDC10236220B300F2C67F /* Sources */,
+				04DEDC11236220B300F2C67F /* Frameworks */,
+				04DEDC12236220B300F2C67F /* Resources */,
+				5A700B8043038F48F5948E32 /* [CP] Embed Pods Frameworks */,
+				5E1129A6637293E50519F25A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04DEDC16236220B300F2C67F /* PBXTargetDependency */,
+			);
+			name = HarwinderWalMart1UITests;
+			productName = HarwinderWalMart1UITests;
+			productReference = 04DEDC14236220B300F2C67F /* HarwinderWalMart1UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04DEDBE8236220B200F2C67F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = mac;
+				TargetAttributes = {
+					04DEDBEF236220B200F2C67F = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					04DEDC08236220B300F2C67F = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 04DEDBEF236220B200F2C67F;
+					};
+					04DEDC13236220B300F2C67F = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 04DEDBEF236220B200F2C67F;
+					};
+				};
+			};
+			buildConfigurationList = 04DEDBEB236220B200F2C67F /* Build configuration list for PBXProject "HarwinderWalMart1" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04DEDBE7236220B200F2C67F;
+			productRefGroup = 04DEDBF1236220B200F2C67F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04DEDBEF236220B200F2C67F /* HarwinderWalMart1 */,
+				04DEDC08236220B300F2C67F /* HarwinderWalMart1Tests */,
+				04DEDC13236220B300F2C67F /* HarwinderWalMart1UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04DEDBEE236220B200F2C67F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04DEDC03236220B200F2C67F /* LaunchScreen.storyboard in Resources */,
+				04DEDC00236220B200F2C67F /* Assets.xcassets in Resources */,
+				04DEDBFB236220B200F2C67F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04DEDC07236220B300F2C67F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04DEDC12236220B300F2C67F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15AD942783265CF7C6C774AC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HarwinderWalMart1Tests/Pods-HarwinderWalMart1Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2BDFEDD8ACA6A05398BFC391 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HarwinderWalMart1/Pods-HarwinderWalMart1-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HarwinderWalMart1/Pods-HarwinderWalMart1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43928D590DA9482E0C745F88 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HarwinderWalMart1Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A700B8043038F48F5948E32 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HarwinderWalMart1UITests/Pods-HarwinderWalMart1UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E1129A6637293E50519F25A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HarwinderWalMart1UITests/Pods-HarwinderWalMart1UITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EFAE07C3BE8486DE64C1FBE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HarwinderWalMart1UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6330F5E90A680F0E552B7CC8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HarwinderWalMart1Tests/Pods-HarwinderWalMart1Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3BC4BA3A9201F5AEBDDC491 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HarwinderWalMart1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F434D6951C84857C44374E1C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HarwinderWalMart1/Pods-HarwinderWalMart1-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04DEDBEC236220B200F2C67F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04DEDC4023624F4700F2C67F /* ApiConstants.swift in Sources */,
+				04DEDC4B2362B13200F2C67F /* AbstractViewController.swift in Sources */,
+				04DEDBF8236220B200F2C67F /* ProductListViewController.swift in Sources */,
+				04DEDC3823623C1500F2C67F /* ProductTableViewCell.swift in Sources */,
+				04DEDBF4236220B200F2C67F /* AppDelegate.swift in Sources */,
+				04DEDC442362933700F2C67F /* HRatingView.swift in Sources */,
+				04DEDC4723629EF800F2C67F /* HWalmartImageView+UIImageView.swift in Sources */,
+				04DEDC27236221D500F2C67F /* ProductDetailViewController.swift in Sources */,
+				04DEDC3323623BA200F2C67F /* Products.swift in Sources */,
+				04DEDC3E23624D8B00F2C67F /* ProductListFacade.swift in Sources */,
+				04DEDC3423623BA200F2C67F /* ProductList.swift in Sources */,
+				04DEDC5123638AEC00F2C67F /* HBannerView.swift in Sources */,
+				04DEDBF6236220B200F2C67F /* SceneDelegate.swift in Sources */,
+				04DEDC492362A38100F2C67F /* HWalmartAppConstants.swift in Sources */,
+				04DEDC3B236248FD00F2C67F /* ApiStore.swift in Sources */,
+				04DEDBFE236220B200F2C67F /* HarwinderWalMart1.xcdatamodeld in Sources */,
+				04DEDC4F23637F6200F2C67F /* HWalmartConnectivity.swift in Sources */,
+				04DEDC4D2362D41300F2C67F /* HWalmartString+String.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04DEDC05236220B300F2C67F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04DEDC10236220B300F2C67F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04DEDC0B236220B300F2C67F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04DEDBEF236220B200F2C67F /* HarwinderWalMart1 */;
+			targetProxy = 04DEDC0A236220B300F2C67F /* PBXContainerItemProxy */;
+		};
+		04DEDC16236220B300F2C67F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04DEDBEF236220B200F2C67F /* HarwinderWalMart1 */;
+			targetProxy = 04DEDC15236220B300F2C67F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04DEDBF9236220B200F2C67F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04DEDBFA236220B200F2C67F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04DEDC01236220B200F2C67F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04DEDC02236220B200F2C67F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04DEDC1B236220B300F2C67F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04DEDC1C236220B300F2C67F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04DEDC1E236220B300F2C67F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BEC1A52D9A3D0327722CA11 /* Pods-HarwinderWalMart1.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6MBPTEG7R4;
+				INFOPLIST_FILE = HarwinderWalMart1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosdevloper12.HarwinderWalMart1;
+				PRODUCT_NAME = WalProd;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04DEDC1F236220B300F2C67F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD1E14F92DE580C97ABDB51F /* Pods-HarwinderWalMart1.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6MBPTEG7R4;
+				INFOPLIST_FILE = HarwinderWalMart1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosdevloper12.HarwinderWalMart1;
+				PRODUCT_NAME = WalProd;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04DEDC21236220B300F2C67F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FD8BB1FBFDDBA8B1FAEDCC3 /* Pods-HarwinderWalMart1Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HarwinderWalMart1Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosdevloper12.HarwinderWalMart1Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HarwinderWalMart1.app/HarwinderWalMart1";
+			};
+			name = Debug;
+		};
+		04DEDC22236220B300F2C67F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C072F188914A186FD7F5D8CF /* Pods-HarwinderWalMart1Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HarwinderWalMart1Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosdevloper12.HarwinderWalMart1Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HarwinderWalMart1.app/HarwinderWalMart1";
+			};
+			name = Release;
+		};
+		04DEDC24236220B300F2C67F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D146C9B4A6EE8CCC0C4DCCA /* Pods-HarwinderWalMart1UITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HarwinderWalMart1UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosdevloper12.HarwinderWalMart1UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HarwinderWalMart1;
+			};
+			name = Debug;
+		};
+		04DEDC25236220B300F2C67F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 877862E799B5907397B73A59 /* Pods-HarwinderWalMart1UITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HarwinderWalMart1UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosdevloper12.HarwinderWalMart1UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HarwinderWalMart1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04DEDBEB236220B200F2C67F /* Build configuration list for PBXProject "HarwinderWalMart1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04DEDC1B236220B300F2C67F /* Debug */,
+				04DEDC1C236220B300F2C67F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04DEDC1D236220B300F2C67F /* Build configuration list for PBXNativeTarget "HarwinderWalMart1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04DEDC1E236220B300F2C67F /* Debug */,
+				04DEDC1F236220B300F2C67F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04DEDC20236220B300F2C67F /* Build configuration list for PBXNativeTarget "HarwinderWalMart1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04DEDC21236220B300F2C67F /* Debug */,
+				04DEDC22236220B300F2C67F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04DEDC23236220B300F2C67F /* Build configuration list for PBXNativeTarget "HarwinderWalMart1UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04DEDC24236220B300F2C67F /* Debug */,
+				04DEDC25236220B300F2C67F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		04DEDBFC236220B200F2C67F /* HarwinderWalMart1.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				04DEDBFD236220B200F2C67F /* HarwinderWalMart1.xcdatamodel */,
+			);
+			currentVersion = 04DEDBFD236220B200F2C67F /* HarwinderWalMart1.xcdatamodel */;
+			path = HarwinderWalMart1.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 04DEDBE8236220B200F2C67F /* Project object */;
+}
